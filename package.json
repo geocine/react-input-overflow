@@ -1,0 +1,86 @@
+{
+  "name": "react-input-overflow",
+  "version": "0.0.1",
+  "description": "Overflow input for React",
+  "main": "dist/index.js",
+  "module": "dist/react-input-overflow.esm.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tsdx lint src",
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "prebuild": "rimraf dist",
+    "test": "tsdx test --env=jsdom",
+    "validate": "npm run lint && npm run test -- --coverage && npm run build",
+    "now-build": "npm run storybook:build",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react-input-overflow",
+    "input",
+    "react",
+    "input-overflow",
+    "overflow"
+  ],
+  "author": "Aivan Monceller <aivan@monceller.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.8.7",
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "@storybook/addon-actions": "5.3.17",
+    "@storybook/addon-links": "5.3.17",
+    "@storybook/addons": "5.3.17",
+    "@storybook/react": "5.3.17",
+    "@testing-library/react": "9.5.0",
+    "@types/jest": "25.1.4",
+    "@types/storybook__react": "5.2.1",
+    "autoprefixer": "9.7.4",
+    "awesome-typescript-loader": "5.2.1",
+    "babel-jest": "25.2.3",
+    "babel-loader": "8.1.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "4.2.3",
+    "prettier": "1.19.1",
+    "pretty-quick": "2.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.0",
+    "rimraf": "3.0.2",
+    "rollup-plugin-copy": "3.3.0",
+    "rollup-plugin-typescript2": "0.26.0",
+    "tsdx": "0.13.0",
+    "tslib": "1.11.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.test.json"
+      }
+    },
+    "transform": {
+      ".(js|ts)x?": "ts-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geocine/react-input-overflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geocine/react-input-overflow/issues"
+  },
+  "homepage": "https://github.com/geocine/react-input-overflow#readme"
+}

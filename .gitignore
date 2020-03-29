@@ -1,0 +1,12 @@
+coverage
+dist
+node_modules
+storybook-static
+package-lock.json
+*.log
+.DS_Store
+.cache
+.rts2_cache_cjs
+.rts2_cache_esm
+.rts2_cache_umd
+.idea/*
